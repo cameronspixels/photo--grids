@@ -1,6 +1,9 @@
-document.body.className += "js-loading";
+var grid = document.getElementById("griddy");
+var loadAnimation = document.getElementById("loading");
+grid.className += "js-loading";
 window.addEventListener("load", showPage, false);
 
 function showPage() {
-  document.body.className = document.body.className.replace ("js-loading", "");
+  grid.className = grid.className.replace("js-loading", " ");
+  loadAnimation.className += "hide";
 }
