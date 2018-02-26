@@ -13,17 +13,20 @@ body {
   grid-gap: 1rem;
   grid-auto-flow: row dense;
   grid-auto-rows: 250px;
+  opacity: 0;
   animation: load-in 2000ms ease-out forwards;
 }
-.js-loading * {
+.js-loading {
   animation-play-state: paused !important;
 }
 @keyframes load-in {
-  0% {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
+  }
+}
+@keyframes load-out {
+  100% {
+    opacity: 0;
   }
 }
 @media screen and (min-width: 382px) {
@@ -159,7 +162,8 @@ body {
   width: 100%;
   margin: 0;
   height: 100vh;
-  position: relative;
+  position: fixed;
+  z-index: 999;
 }
 .circle {
   margin: 1rem;
@@ -211,5 +215,9 @@ body {
   }  
 }
 .hide {
-  display: none;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  animation: load-out 660ms ease-out forwards;
 }
