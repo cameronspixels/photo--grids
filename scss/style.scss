@@ -117,14 +117,16 @@ body {
   font-weight: 700;
   text-align: left;
   max-width: 700px;
+  letter-spacing: -2px;
 }
 .intro--text {
   margin: 0 auto;
   font-size: 1.2rem;
   text-align: left;
   font-weight: 300;
-  line-height: 2rem;
+  line-height: 2.2rem;
   max-width: 700px;
+  letter-spacing: 0;
 }
 @media screen and (min-width: 767px) {
   .tall--item {
@@ -137,7 +139,7 @@ body {
     font-size: 4rem;
   }
   .intro--text {
-    font-size: 1.4rem; line-height: 2.8rem;
+    font-size: 1.4rem; line-height: 2.4rem;
   }
 }
 .item--1 {
