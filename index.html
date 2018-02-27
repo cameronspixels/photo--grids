@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>A Pen by  cameron barnes.</title>
+  <title>Responsive Photo Grids</title>
   
   
   
@@ -14,14 +14,22 @@
 
 <body>
 
-  <div class="centering" id="loading">
+  <!--
+Each grid item is the parent <div> with the class 'reg--item'.
+By default this is effectively 1x1.
+For 1x2, add the class 'wide--item' to the parent <div>.
+For 2x1, add the class 'tall--item' to the parent <div>.
+For 2x2, add both classes to the parent <div>.
+-->
+
+<div class="centering" id="loading">
   <div class="circle circle--1"></div>
 	<div class="circle circle--2"></div>
 </div>
-<div class="grid js-loading" id="griddy">
+<div class="grid content--loading" id="the--grid">
   <div class="grid--intro">
-    <h1 class="intro--header">Welcome</h1>
-    <p class="intro--text">This is my creation of a photography portfolio using CSS grids. The page plays a CSS loading animation while the content is rendered in the background, and any spaces within the grid are filled automatically when a new item is added.</p>
+    <h1 class="intro--header">Hello</h1>
+    <p class="intro--text">This is my creation of a photography portfolio using CSS grids. The page plays a CSS loading animation while the content is downloded in the background, and any spaces within the grid are filled automatically when a new item is added.</p>
   </div>
   <div class="reg--item" title="Photograph in Zürich, Switzerland.">
     <div class="item--text">

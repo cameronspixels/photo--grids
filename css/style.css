@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700,800");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,800");
 body {
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom right, #5900ff, #ff28de);
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-family: 'Helvetica Neue', 'Montserrat', sans-serif;
   font-size: 100%;
   color: white;
 }
@@ -21,7 +20,7 @@ body {
   animation: load-in 2000ms ease-out forwards;
 }
 
-.js-loading {
+.content--loading {
   animation-play-state: paused !important;
 }
 
@@ -105,6 +104,14 @@ body {
   font-size: 1.2rem;
   text-decoration: none;
   border-bottom: 2px solid #FFF;
+  transition: all 220ms ease-in-out;
+  font-weight: 400;
+}
+.item--text .item--more:hover {
+  cursor: pointer;
+  color: #ff28de;
+  border-color: #ff28de;
+  transition: all 220ms ease-in-out;
 }
 
 .grid--intro {
@@ -118,7 +125,7 @@ body {
 .intro--header {
   margin-top: -1rem;
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -128,7 +135,7 @@ body {
   text-align: center;
   font-weight: 300;
   line-height: 2.2rem;
-  max-width: 500px;
+  max-width: 700px;
 }
 
 @media screen and (min-width: 767px) {
@@ -142,6 +149,11 @@ body {
 
   .intro--header {
     font-size: 4rem;
+  }
+
+  .intro--text {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
   }
 }
 .item--1 {
